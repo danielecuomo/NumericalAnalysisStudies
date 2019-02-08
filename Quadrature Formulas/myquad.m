@@ -19,7 +19,7 @@ function [S, ierr] = myquad(a, b, tol, fun, nfmax)
             ierr = -1; break;
         end
         
-        for i=1:n/2 %ho raddoppiato il numero di nodi, ma la met‡ li ho gi‡ calcolati
+        for i=1:n/2 %ho raddoppiato il numero di nodi, ma la met√† li ho gi√† calcolati
             sum = sum + fun(a + (2*i - 1)*h);
         end
         Iold = Inew;
